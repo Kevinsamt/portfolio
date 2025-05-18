@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Samuel - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">KS</span>
+                <div class="logo-dot"></div>
+                <div class="logo-line"></div>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#home" class="nav-link"><i class="fas fa-home nav-icon"></i>Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user nav-icon"></i>About</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase nav-icon"></i>Experience</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-code nav-icon"></i>Projects</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-laptop-code nav-icon"></i>Skills</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope nav-icon"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="tech-bg"></div>
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-title">kevin@portfolio:~</div>
+                </div>
+                <div class="terminal-content">
+                    <p class="typing-text"> Hello, I'm Kevin Samuel</p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <span class="tech-item"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="tech-item"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="tech-item"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-item"><i class="fab fa-php"></i> PHP</span>
+            </div>
+            <a href="#contact" class="cta-button">
+                <span>Initialize Connection</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="code-editor">
+                    <div class="editor-header">
+                        <div class="editor-buttons">
+                            <span class="editor-button close"></span>
+                            <span class="editor-button minimize"></span>
+                            <span class="editor-button maximize"></span>
+                        </div>
+                        <div class="editor-title">kevin.jsx</div>
+                        <div class="editor-actions">
+                            <i class="fas fa-copy copy-btn" title="Copy Code"></i>
+                            <i class="fas fa-expand expand-btn" title="Expand"></i>
+                        </div>
+                    </div>
+                    <div class="editor-content">
+                        <div class="line-numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                            <span>11</span>
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                            <span>16</span>
+                            <span>17</span>
+                            <span>18</span>
+                            <span>19</span>
+                            <span>20</span>
+                            <span>21</span>
+                            <span>22</span>
+                            <span>23</span>
+                            <span>24</span>
+                            <span>25</span>
+                            <span>26</span>
+                            <span>27</span>
+                            <span>28</span>
+                            <span>29</span>
+                            <span>30</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>
+<span class="keyword">import</span> <span class="class">React</span> <span class="keyword">from</span> <span class="string">'react'</span>;
+
+<span class="keyword">const</span> <span class="class">DeveloperProfile</span> = () => {
+    <span class="keyword">const</span> <span class="property">developer</span> = {
+        <span class="property">name</span>: <span class="string">"Kevin Samuel"</span>,
+        <span class="property">role</span>: <span class="string">"Web Developer"</span>,
+        <span class="property">location</span>: <span class="string">"Medan, Indonesia"</span>,
+        <span class="property">skills</span>: {
+            <span class="property">frontend</span>: [<span class="string">"HTML5"</span>, <span class="string">"CSS3"</span>, <span class="string">"JavaScript"</span>],
+            <span class="property">backend</span>: [<span class="string">"PHP"</span>, <span class="string">"MySQL"</span>, <span class="string">"MongoDB"</span>],
+            <span class="property">frameworks</span>: [<span class="string">"Laravel"</span>, <span class="string">"Node.js"</span>],
+            <span class="property">tools</span>: [<span class="string">"Git"</span>, <span class="string">"VS Code"</span>]
+        },
+        <span class="property">education</span>: {
+            <span class="property">current</span>: {
+                <span class="property">university</span>: <span class="string">"Universitas Satya Terra Bhinneka"</span>,
+                <span class="property">program</span>: <span class="string">"Informatika IF B SR"</span>,
+                <span class="property">degree</span>: <span class="string">"S1"</span>,
+                <span class="property">status</span>: <span class="string">"In Progress"</span>
+            },
+            <span class="property">previous</span>: {
+                <span class="property">school</span>: <span class="string">"SMK MEDAN AREA 1"</span>,
+                <span class="property">major</span>: <span class="string">"Multimedia"</span>,
+                <span class="property">year</span>: <span class="string">"2021-2023"</span>
+            }
+        }
+    };
+
+    <span class="keyword">return</span> (
+        <span class="method">&lt;div className="developer-profile"&gt;</span>
+            <span class="method">&lt;h1&gt;{developer.name}&lt;/h1&gt;</span>
+            <span class="method">&lt;h2&gt;{developer.role}&lt;/h2&gt;</span>
+            <span class="method">&lt;p&gt;{developer.location}&lt;/p&gt;</span>
+            <span class="method">&lt;Skills skills={developer.skills} /&gt;</span>
+            <span class="method">&lt;Education education={developer.education} /&gt;</span>
+        <span class="method">&lt;/div&gt;</span>
+    );
+};
+
+<span class="keyword">export default</span> <span class="class">DeveloperProfile</span>;</code></pre>
+                        </div>
+                    </div>
+                    <div class="editor-footer">
+                        <div class="editor-status">
+                            <span class="status-item"><i class="fab fa-react"></i> React</span>
+                            <span class="status-item"><i class="fas fa-code-branch"></i> Main</span>
+                            <span class="status-item"><i class="fas fa-clock"></i> UTF-8</span>
+                            <span class="status-item"><i class="fas fa-code"></i> Ln 30, Col 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate web developer with expertise in creating innovative digital solutions. My background in multimedia and entrepreneurship allows me to combine technical skills with business acumen to deliver exceptional results.</p>
+                    <div class="tech-icons">
+                        <div class="tech-icon-wrapper">
+                            <i class="fab fa-html5"></i>
+                            <span class="tech-tooltip">HTML5</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fab fa-css3-alt"></i>
+                            <span class="tech-tooltip">CSS3</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fab fa-js"></i>
+                            <span class="tech-tooltip">JavaScript</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fab fa-php"></i>
+                            <span class="tech-tooltip">PHP</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fab fa-laravel"></i>
+                            <span class="tech-tooltip">Laravel</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fas fa-database"></i>
+                            <span class="tech-tooltip">MySQL</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fas fa-server"></i>
+                            <span class="tech-tooltip">MongoDB</span>
+                        </div>
+                        <div class="tech-icon-wrapper">
+                            <i class="fab fa-node-js"></i>
+                            <span class="tech-tooltip">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>Universitas Satya Terra Bhinneka</h4>
+                                <span class="tech-badge">Current</span>
+                            </div>
+                            <p class="date">2024 - Present</p>
+                            <p>Program Studi Informatika IF B SR</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> S1 Informatika</li>
+                                <li><i class="fas fa-check"></i> Focus on Software Development</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Programming</span>
+                                <span class="tech-tag">Software Engineering</span>
+                                <span class="tech-tag">Computer Science</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>SMK MEDAN AREA 1</h4>
+                                <span class="tech-badge">Completed</span>
+                            </div>
+                            <p class="date">2021 - 2023</p>
+                            <p>Jurusan Multimedia</p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Design</span>
+                                <span class="tech-tag">Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>Radio Republik Indonesia (RRI)</h4>
+                                <span class="tech-badge">Technical</span>
+                            </div>
+                            <p class="date">2022 - 2023</p>
+                            <p>Praktik Kerja Lapangan</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Assisted technical staff with equipment maintenance</li>
+                                <li><i class="fas fa-check"></i> Managed technical operations</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Technical Support</span>
+                                <span class="tech-tag">System Management</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>PT ROYAL ARGO SUKSES GEMILANG</h4>
+                                <span class="tech-badge">Development</span>
+                            </div>
+                            <p class="date">2024</p>
+                            <p>Magang Entrepreneurship</p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Designed innovative business ideas</li>
+                                <li><i class="fas fa-check"></i> Created business proposals</li>
+                                <li><i class="fas fa-check"></i> Developed financial management software</li>
+                            </ul>
+                            <div class="experience-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Universitas Muhammadiyah Sumatera Utara</h4>
+                        <span class="tech-badge">Innovation</span>
+                    </div>
+                    <p class="date">2024</p>
+                    <p>Merdeka Belajar Kampus Merdeka</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Entrepreneurship development</li>
+                        <li><i class="fas fa-check"></i> Business idea design</li>
+                        <li><i class="fas fa-check"></i> Financial workflow design</li>
+                        <li><i class="fas fa-check"></i> Digital Wallet development</li>
+                    </ul>
+                    <div class="experience-tech">
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">UI/UX</span>
+                        <span class="tech-tag">FinTech</span>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>SnaDigitalTech</h4>
+                        <span class="tech-badge">Founder & CEO</span>
+                    </div>
+                    <p class="date">2024 - Present</p>
+                    <p>Perusahaan Teknologi Kreatif</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Mengembangkan solusi digital untuk sektor pariwisata dan UMKM</li>
+                        <li><i class="fas fa-check"></i> Memimpin pengembangan platform TechTouryzm berbasis AI</li>
+                        <li><i class="fas fa-check"></i> Mengintegrasikan teknologi dengan nilai-nilai lokal dan keberlanjutan</li>
+                    </ul>
+                    <div class="experience-tech">
+                        <span class="tech-tag">AI Development</span>
+                        <span class="tech-tag">Digital Tourism</span>
+                        <span class="tech-tag">Sustainability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Achievements</h2>
+            <div class="tech-bg"></div>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <h3>Juara 1 Cerdas Cermat Cepat Pramuka</h3>
+                            <span class="award-badge">First Place</span>
+                        </div>
+                        <div class="award-details">
+                            <p class="award-event"><i class="fas fa-calendar-alt"></i> Perkemahan Literasi (Pelita) 2,3 dan 4</p>
+                            <p class="award-org"><i class="fas fa-building"></i> Fokalindo Sumatera Utara</p>
+                            <p class="award-date"><i class="fas fa-clock"></i> 2022-2023</p>
+                        </div>
+                        <div class="award-tech">
+                            <span class="tech-chip">Leadership</span>
+                            <span class="tech-chip">Teamwork</span>
+                            <span class="tech-chip">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <h3>Juara 2 Cipta Pantun Putra</h3>
+                            <span class="award-badge">Second Place</span>
+                        </div>
+                        <div class="award-details">
+                            <p class="award-event"><i class="fas fa-calendar-alt"></i> Pelita 2</p>
+                            <p class="award-org"><i class="fas fa-building"></i> Fokalindo Sumatera Utara</p>
+                            <p class="award-date"><i class="fas fa-clock"></i> 2022</p>
+                        </div>
+                        <div class="award-tech">
+                            <span class="tech-chip">Creativity</span>
+                            <span class="tech-chip">Cultural</span>
+                            <span class="tech-chip">Artistic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="award-content">
+                        <div class="award-header">
+                            <h3>Awisaka Leadership</h3>
+                            <span class="award-badge">Recognition</span>
+                        </div>
+                        <div class="award-details">
+                            <p class="award-event"><i class="fas fa-calendar-alt"></i> Alumni Wirausaha Merdeka</p>
+                            <p class="award-date"><i class="fas fa-clock"></i> 2024</p>
+                        </div>
+                        <div class="award-tech">
+                            <span class="tech-chip">Leadership</span>
+                            <span class="tech-chip">Entrepreneurship</span>
+                            <span class="tech-chip">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="business" class="business">
+        <div class="container">
+            <h2 class="section-title">SnaDigitalTech</h2>
+            <div class="business-content">
+                <div class="business-card">
+                    <div class="business-header">
+                        <div class="business-logo">
+                            <i class="fas fa-building"></i>
+                            <div class="logo-glow"></div>
+                        </div>
+                        <h3>Perusahaan Teknologi Kreatif</h3>
+                        <p class="business-tagline">Menggabungkan Teknologi dengan Nilai Lokal</p>
+                    </div>
+                    <div class="business-description">
+                        <p>SnaDigitalTech adalah perusahaan teknologi kreatif yang berfokus pada pengembangan solusi digital untuk mendukung sektor pariwisata dan UMKM di Indonesia. Dengan semangat inovasi dan keberlanjutan, kami berupaya menciptakan ekosistem digital yang ramah lingkungan dan berdampak sosial positif.</p>
+                    </div>
+                    <div class="business-vision">
+                        <h4><i class="fas fa-eye"></i> Visi</h4>
+                        <p>Menggabungkan teknologi cerdas dengan nilai-nilai lokal untuk mempercepat transformasi digital di bidang pariwisata berkelanjutan dan kewirausahaan berbasis komunitas.</p>
+                    </div>
+                    <div class="business-founder">
+                        <h4><i class="fas fa-user-tie"></i> Founder</h4>
+                        <p>Kevin Samuel Tampubolon, seorang mahasiswa Informatika yang memiliki komitmen tinggi terhadap pembangunan berkelanjutan dan pemanfaatan teknologi untuk kepentingan masyarakat luas.</p>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>TechTouryzm</h3>
+                        <span class="product-badge">Platform AI</span>
+                    </div>
+                    <div class="product-description">
+                        <p>Platform berbasis kecerdasan buatan (AI) yang merekomendasikan destinasi wisata berkelanjutan di Indonesia. Aplikasi ini tidak hanya menampilkan tempat wisata, tetapi juga memberikan informasi mengenai dampak lingkungan, keberlanjutan lokal, dan mendukung UMKM sekitar destinasi.</p>
+                    </div>
+                    <div class="product-features">
+                        <div class="feature-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI-Powered Recommendations</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainable Tourism</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-store"></i>
+                            <span>UMKM Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Impact Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Project Showcase</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Sakuya Digital Wallet">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Sakuya Digital Wallet</h3>
+                            <span class="project-status">Active</span>
+                        </div>
+                        <p>A digital wallet application developed during the Merdeka Belajar Kampus Merdeka program. Features include financial management, transaction tracking, and secure payment processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="App Eduvation">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>App Eduvation</h3>
+                            <span class="project-status">Active</span>
+                        </div>
+                        <p>An innovative educational platform that combines AI technology with interactive learning. Features include personalized learning paths, real-time progress tracking, and collaborative tools for students and educators.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Sna Digital Tech App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Sna Digital Tech App</h3>
+                            <span class="project-status">Active</span>
+                        </div>
+                        <p>A comprehensive digital solution for tourism and UMKM sectors. Features include AI-powered destination recommendations, sustainable tourism tracking, and local business integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-react"></i> React Native</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> AI/ML</span>
+                            <span class="tech-tag"><i class="fas fa-cloud"></i> Cloud</span>
+                            <span class="tech-tag"><i class="fas fa-leaf"></i> Sustainability</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <span>Semantic HTML</span>
+                        <span>Accessibility</span>
+                        <span>SEO Best Practices</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <span>Flexbox</span>
+                        <span>Grid</span>
+                        <span>Animations</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <span>ES6+</span>
+                        <span>DOM Manipulation</span>
+                        <span>Async/Await</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3>PHP</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-details">
+                        <span>OOP</span>
+                        <span>MVC</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect With Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 123 4567 890</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Medan, Indonesia</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Kevin Samuel. All rights reserved.</p>
+                <div class="footer-tech">
+                    <span>Built with</span>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Particles.js configuration
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#2563eb' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#2563eb',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                cursorFollower.style.left = e.clientX + 'px';
+                cursorFollower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+
+        // Typing effect
+        const texts = [
+            " Hello, I'm Kevin Samuel",
+            " Web Developer & Tech Enthusiast",
+            "Ready to build amazing things"
+        ];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        function type() {
+            if (count === texts.length) {
+                count = 0;
+            }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.querySelector('.typing-text').textContent = letter;
+            if (letter.length === currentText.length) {
+                count++;
+                index = 0;
+                setTimeout(type, 2000);
+            } else {
+                setTimeout(type, 100);
+            }
+        }
+
+        type();
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+  </body>
+</html>
