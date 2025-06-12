@@ -7,6 +7,168 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        /* Project Showcase Styles */
+        .project-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-image img {
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            color: white;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        /* Design Section Styles */
+        .design-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .design-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .design-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .design-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .design-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .design-card:hover .design-overlay {
+            opacity: 1;
+        }
+
+        .design-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .design-link {
+            color: white;
+            font-size: 2rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .design-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .design-content {
+            padding: 1.5rem;
+        }
+
+        .design-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .design-category {
+            background: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+        }
+
+        .design-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-tag i {
+            color: #2563eb;
+        }
+    </style>
   </head>
   <body>
     <div id="particles-js"></div>
@@ -114,6 +276,18 @@
                             <span>28</span>
                             <span>29</span>
                             <span>30</span>
+                            <span>31</span>
+                            <span>32</span>
+                            <span>33</span>
+                            <span>34</span>
+                            <span>35</span>
+                            <span>36</span>
+                            <span>37</span>
+                            <span>38</span>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            
                         </div>
                         <div class="code-content">
                             <pre><code>
@@ -498,11 +672,11 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300" alt="App Eduvation">
+                        <img src="/src/img/Cuplikan layar 2025-06-12 221429.png" alt="App Eduvation">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://eduv-app.web.app/login" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="http://github.com/Kevinsamt/eduv-app/" class="project-link"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -543,6 +717,142 @@
                             <span class="tech-tag"><i class="fas fa-cloud"></i> Cloud</span>
                             <span class="tech-tag"><i class="fas fa-leaf"></i> Sustainability</span>
                         </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/src/img/Cuplikan layar 2025-06-12 213601.png" alt="Custom Otomotif" style="aspect-ratio: 16/9; object-fit: cover; width: 100%; height: auto; border-radius: 8px; transition: transform 0.3s ease;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://kevinsamt.github.io/costum-otomotif/aksesoris.html" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kevinsamt/costum-otomotif" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Custom Otomotif</h3>
+                            <span class="project-status">Active</span>
+                        </div>
+                        <p>An e-commerce platform for automotive accessories and custom parts. Features include product catalog, shopping cart functionality, and responsive design for both motorcycle and car accessories.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="tech-tag"><i class="fas fa-shopping-cart"></i> E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design" class="design">
+        <div class="container">
+            <h2 class="section-title">Management Content & Graphic Design</h2>
+            <div class="design-grid">
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="/src/img/Cuplikan layar 2025-06-12 220432.png" alt="Eduvation" style="aspect-ratio: 16/9; object-fit: cover; width: 100%; height: auto; border-radius: 8px;">
+                        <div class="design-overlay">
+                            <div class="design-links">
+                                <a href="https://www.instagram.com/eduvation.inbis/" class="design-link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <div class="design-header">
+                            <h3>Eduvation</h3>
+                            <span class="design-category">Education Platform</span>
+                        </div>
+                        <p>Educational content management and graphic design for an innovative learning platform. Creating engaging visual content and managing social media presence.</p>
+                        <div class="design-tech">
+                            <span class="tech-tag"><i class="fas fa-palette"></i> Graphic Design</span>
+                            <span class="tech-tag"><i class="fas fa-camera"></i> Content Creation</span>
+                            <span class="tech-tag"><i class="fas fa-hashtag"></i> Social Media</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="/src/img/Cuplikan layar 2025-06-12 220416.png" alt="Idetumbuh" style="aspect-ratio: 16/9; object-fit: cover; width: 100%; height: auto; border-radius: 8px;">
+                        <div class="design-overlay">
+                            <div class="design-links">
+                                <a href="https://www.instagram.com/idetumbuh/" class="design-link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <div class="design-header">
+                            <h3>Idetumbuh</h3>
+                            <span class="design-category">Creative Agency</span>
+                        </div>
+                        <p>Creative content management and visual design for a digital agency. Specializing in brand identity, social media graphics, and marketing materials.</p>
+                        <div class="design-tech">
+                            <span class="tech-tag"><i class="fas fa-paint-brush"></i> Brand Design</span>
+                            <span class="tech-tag"><i class="fas fa-bullhorn"></i> Marketing</span>
+                            <span class="tech-tag"><i class="fas fa-share-alt"></i> Social Media</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-card">
+                    <div class="design-image">
+                        <img src="/src/img/Cuplikan layar 2025-06-12 220554.png" alt="Sna Digital Tech" style="aspect-ratio: 16/9; object-fit: cover; width: 100%; height: auto; border-radius: 8px;">
+                        <div class="design-overlay">
+                            <div class="design-links">
+                                <a href="https://www.instagram.com/snadigitaltech/" class="design-link" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="design-content">
+                        <div class="design-header">
+                            <h3>Sna Digital Tech</h3>
+                            <span class="design-category">Tech Company</span>
+                        </div>
+                        <p>Digital content management and tech-focused graphic design. Creating engaging visual content for a technology company specializing in digital solutions.</p>
+                        <div class="design-tech">
+                            <span class="tech-tag"><i class="fas fa-laptop-code"></i> Tech Design</span>
+                            <span class="tech-tag"><i class="fas fa-chart-line"></i> Digital Marketing</span>
+                            <span class="tech-tag"><i class="fas fa-globe"></i> Web Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="organizations" class="organizations">
+        <div class="container">
+            <h2 class="section-title"></h2>
+            <div class="org-marquee-container">
+                <div class="org-marquee">
+                    <div class="org-item">
+                        <img src="/src/img/images (1).jpeg" alt="USTB Logo" class="org-logo">
+                        <span>Universitas Satya Terra Bhinneka</span>
+                    </div>
+                    <div class="org-item">
+                        <img src="/src/img/untitled-design-30-61f3881206310e10ef6bad54.png.jpeg" alt="Kampus Merdeka Logo" class="org-logo">
+                        <span>Kampus Merdeka</span>
+                    </div>
+                    <div class="org-item">
+                        <img src="/src/img/images.jpeg" alt="Wirausaha Merdeka Logo" class="org-logo">
+                        <span>Wirausaha Merdeka</span>
+                    </div>
+                    <div class="org-item">
+                        <img src="/src/img/rrilogo.jpeg" alt="RRI Logo" class="org-logo">
+                        <span>Radio Republik Indonesia (RRI)</span>
+                    <div class="org-item">
+                        <img src="https://snadigitaltech.com/wp-content/uploads/2024/01/logo-snadigitaltech.png" alt="SnaDigitalTech Logo" class="org-logo">
+                        <span>SnaDigitalTech</span>
                     </div>
                 </div>
             </div>
@@ -620,11 +930,11 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
+                        <p>kevinsamuelyt@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <p>+62 123 4567 890</p>
+                        <p>+62 813-7359-0144</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -758,6 +1068,59 @@
                 menuToggle.classList.remove('active');
                 nav.classList.remove('active');
             }
+        });
+
+        // Code Editor Functionality
+        const copyBtn = document.querySelector('.copy-btn');
+        const expandBtn = document.querySelector('.expand-btn');
+        const codeContent = document.querySelector('.code-content');
+        const editorContent = document.querySelector('.editor-content');
+
+        // Copy functionality
+        copyBtn.addEventListener('click', () => {
+            const code = codeContent.textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                copyBtn.classList.add('copied');
+                setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                }, 2000);
+            });
+        });
+
+        // Expand functionality
+        expandBtn.addEventListener('click', () => {
+            editorContent.classList.toggle('expanded');
+            if (editorContent.classList.contains('expanded')) {
+                expandBtn.classList.remove('fa-expand');
+                expandBtn.classList.add('fa-compress');
+            } else {
+                expandBtn.classList.remove('fa-compress');
+                expandBtn.classList.add('fa-expand');
+            }
+        });
+
+        // Terminal buttons functionality
+        const closeBtn = document.querySelector('.editor-button.close');
+        const minimizeBtn = document.querySelector('.editor-button.minimize');
+        const maximizeBtn = document.querySelector('.editor-button.maximize');
+
+        closeBtn.addEventListener('click', () => {
+            const codeEditor = document.querySelector('.code-editor');
+            codeEditor.style.transform = 'scale(0.8)';
+            codeEditor.style.opacity = '0';
+            setTimeout(() => {
+                codeEditor.style.display = 'none';
+            }, 300);
+        });
+
+        minimizeBtn.addEventListener('click', () => {
+            const editorContent = document.querySelector('.editor-content');
+            editorContent.style.display = editorContent.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        maximizeBtn.addEventListener('click', () => {
+            const codeEditor = document.querySelector('.code-editor');
+            codeEditor.classList.toggle('maximized');
         });
     </script>
   </body>
