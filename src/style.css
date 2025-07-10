@@ -1,40 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  color: #222;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+  transition: color 0.2s;
 }
 a:hover {
-  color: #535bf2;
+  color: #42b883;
 }
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
+  background: none;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  letter-spacing: 1px;
 }
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -44,31 +42,50 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(100, 108, 255, 0.08);
 }
 button:hover {
   border-color: #646cff;
+  box-shadow: 0 2px 8px rgba(100, 108, 255, 0.12);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 .card {
   padding: 2em;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(100, 108, 255, 0.08);
 }
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .main-content {
+    padding: 0 0.5rem;
+  }
+  .hello-card {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .main-footer {
+    padding: 1rem 0.5rem;
+    font-size: 0.95rem;
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
   }
   a:hover {
     color: #747bff;

@@ -168,6 +168,54 @@
         .tech-tag i {
             color: #2563eb;
         }
+
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .certificate-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 1.5rem 1rem 1rem 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .certificate-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(37,99,235,0.15);
+        }
+        .certificate-img {
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: contain;
+            background: #fff;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .certificate-info {
+            text-align: center;
+        }
+        .certificate-title {
+            font-size: 1.15rem;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .certificate-desc {
+            font-size: 1rem;
+            color: #444;
+            opacity: 0.85;
+        }
     </style>
   </head>
   <body>
@@ -848,11 +896,16 @@
                         <span>Wirausaha Merdeka</span>
                     </div>
                     <div class="org-item">
+                        <img src="/src/img/images.png" alt="Wirausaha Merdeka Logo" class="org-logo">
+                        <span>Cisco Networking Academy</span>
+                    </div>
+                    <div class="org-item">
                         <img src="/src/img/rrilogo.jpeg" alt="RRI Logo" class="org-logo">
                         <span>Radio Republik Indonesia (RRI)</span>
+                    </div>
                     <div class="org-item">
-                        <img src="https://snadigitaltech.com/wp-content/uploads/2024/01/logo-snadigitaltech.png" alt="SnaDigitalTech Logo" class="org-logo">
-                        <span>SnaDigitalTech</span>
+                        <img src="/src/img/gerakan-pramuka.jpeg" alt="Gerakan Pramuka Bantara Logo" class="org-logo">
+                        <span>Gerakan Pramuka Bantara</span>
                     </div>
                 </div>
             </div>
@@ -917,6 +970,53 @@
                         <span>OOP</span>
                         <span>MVC</span>
                         <span>Database</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="/Sertifikat/Sertifikat1.png" alt="Introduction to Cybersecurity" class="certificate-img">
+                    </div>
+                    <div class="certificate-content">
+                        <div class="certificate-header">
+                            <h3>Introduction to Cybersecurity</h3>
+                            <span class="certificate-status badge"><i class="fas fa-certificate"></i> Achieved</span>
+                        </div>
+                        <p class="certificate-desc">
+                            Completed a comprehensive course on cybersecurity fundamentals, including cyber threats, privacy, data confidentiality, and threat detection.
+                        </p>
+                        <div class="certificate-tech">
+                            <span class="tech-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                            <span class="tech-tag"><i class="fas fa-user-secret"></i> Privacy</span>
+                            <span class="tech-tag"><i class="fas fa-lock"></i> Data Confidentiality</span>
+                            <span class="tech-tag"><i class="fas fa-bug"></i> Threat Detection</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="/Sertifikat/Sertifikat2.png" alt="ASEAN Data Science Bootcamp" class="certificate-img">
+                    </div>
+                    <div class="certificate-content">
+                        <div class="certificate-header">
+                            <h3>ASEAN Data Science Bootcamp</h3>
+                            <span class="certificate-status badge"><i class="fas fa-certificate"></i> Achieved</span>
+                        </div>
+                        <p class="certificate-desc">
+                            Participated in an intensive bootcamp focused on data science, data analysis, and machine learning using real-world datasets and industry tools.
+                        </p>
+                        <div class="certificate-tech">
+                            <span class="tech-tag"><i class="fas fa-database"></i> Data Science</span>
+                            <span class="tech-tag"><i class="fas fa-chart-bar"></i> Data Analysis</span>
+                            <span class="tech-tag"><i class="fas fa-robot"></i> Machine Learning</span>
+                        </div>
                     </div>
                 </div>
             </div>
